@@ -80,7 +80,7 @@ public abstract class AsyncTask : GLib.Object{
 	public signal void stderr_line_read(string line);
 	public signal void task_complete();
 
-	public AsyncTask(){
+	private AsyncTask(){
 		init_temp_directories();
 	}
 
